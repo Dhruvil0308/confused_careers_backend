@@ -1,4 +1,5 @@
 from fastapi import FastAPI, Depends, HTTPException
+import uvicorn
 from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 from database import get_db
 from pymongo.database import Database

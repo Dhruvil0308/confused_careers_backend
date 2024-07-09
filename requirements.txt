@@ -3,4 +3,4 @@ pymongo
 pydantic
 python-jose
 passlib
-dotenv
+python-dotenv

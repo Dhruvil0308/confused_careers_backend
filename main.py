@@ -28,6 +28,3 @@ async def Access_Login(form_data: OAuth2PasswordRequestForm = Depends(), db: Dat
     return {"access_token": token, "token_type": "bearer"}
 
 
-
-if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=8000)

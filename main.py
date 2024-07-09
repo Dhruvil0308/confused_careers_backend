@@ -25,3 +25,8 @@ async def Access_Login(form_data: OAuth2PasswordRequestForm = Depends(), db: Dat
         raise HTTPException(status_code=401, detail="Invalid username or password")
     token = auth.encode_token(authenticated_user["UserName"])
     return {"access_token": token, "token_type": "bearer"}
+
+
+
+if __name__ == "__main__":
+    uvicorn.run(app, host="0.0.0.0", port=8000)
